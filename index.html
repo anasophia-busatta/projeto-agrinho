@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="agrinho, sustentabilidade, pegada ambiental, educacao">
+    <title>Simulador de Pegada Ambiental | Projeto Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Simulador de Pegada Ambiental</h1>
+        <p>Descubra o impacto dos seus hábitos diários no planeta.</p>
+    </header>
+
+    <main>
+        <section id="quiz-container">
+            <form id="simulator-form">
+                
+                <div class="form-group">
+                    <label for="transport">1. Qual meio de transporte você mais utiliza no dia a dia?</label>
+                    <select id="transport" required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="10">Carro individual (Grande impacto)</option>
+                        <option value="5">Transporte público / Carona (Médio impacto)</option>
+                        <option value="1">Bicicleta / Caminhada (Baixo impacto)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="meat">2. Com que frequência você consome carne vermelha?</label>
+                    <select id="meat" required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="10">Todos os dias</option>
+                        <option value="6">Algumas vezes por semana</option>
+                        <option value="2">Raramente ou nunca (Vegetariano/Vegano)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="shower">3. Quanto tempo, em média, dura o seu banho?</label>
+                    <select id="shower" required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="10">Mais de 15 minutos</option>
+                        <option value="5">Entre 5 e 15 minutes</option>
+                        <option value="2">Menos de 5 minutos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="recycle">4. Você costuma separar o lixo reciclável na sua casa?</label>
+                    <select id="recycle" required>
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="10">Não, misturo tudo</option>
+                        <option value="5">Às vezes separo o básico</option>
+                        <option value="1">Sim, separo todo o lixo corretamente</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="btn-calcular">Calcular Pegada Ambiental</button>
+            </form>
+        </section>
+
+        <section id="result-container" class="hidden">
+            <h2>Seu Resultado:</h2>
+            <div id="result-score"></div>
+            <p id="result-text"></p>
+            <button id="btn-restart">Refazer Simulador</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Projeto Agrinho. Viva de forma sustentável!</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

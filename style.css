@@ -1,0 +1,130 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f9f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Container Principal */
+main {
+    flex: 1;
+    max-width: 600px;
+    width: 90%;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Formulários */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2e7d32;
+}
+
+select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #c8e6c9;
+    border-radius: 4px;
+    background-color: #fafafa;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #2e7d32;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+/* Tela de Resultado */
+#result-container {
+    text-align: center;
+    padding: 1rem;
+}
+
+#result-score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+#result-text {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Classes Utilitárias */
+.hidden {
+    display: none !important;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5e20;
+    color: #e8f5e9;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* Responsividade Básica (para telas bem pequenas) */
+@media (max-width: 480px) {
+    main {
+        padding: 1.2rem;
+        margin: 1rem auto;
+    }
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
