@@ -10,8 +10,8 @@ Este é um projeto interativo desenvolvido para conscientizar jovens e adultos s
 
 ## 📁 Estrutura do Projeto
 - `index.html`: Estrutura semântica e inclusão da tag `agrinho`.
-- `css/style.css`: Estilização e responsividade através de Flexbox.
-- `js/script.js`: Lógica de processamento das respostas e interatividade.
+- `style.css`: Estilização e responsividade através de Flexbox.
+- `main.js`: Lógica de processamento das respostas e interatividade.
 
 ## 🏷️ Tag Agrinho
 Conforme os requisitos, a tag meta "agrinho" foi adicionada no `head` do documento HTML para fins de indexação e identificação do projeto.
